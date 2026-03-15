@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" fill="none">
+  <!-- X mark -->
+  <path d="M10 10L25 25M25 10L10 25" stroke="#00D4AA" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Arrow up right from X -->
+  <path d="M25 25L45 5" stroke="#00D4AA" stroke-width="4" stroke-linecap="round"/>
+  <path d="M38 5L45 5L45 12" stroke="#00D4AA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Text: XERO -->
+  <text x="55" y="28" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="700" fill="#0A2540">XERO</text>
+  
+  <!-- Text: TO AI -->
+  <text x="55" y="48" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="500" fill="#635BFF">TO AI</text>
+</svg>
