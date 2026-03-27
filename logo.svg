@@ -6,27 +6,20 @@
     </linearGradient>
   </defs>
 
-  <!-- "Xer" — bold dark, baseline y=38 -->
+  <!-- "Xer" — currentColor adapts to dark/light mode -->
   <text x="52" y="38"
         font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
-        font-size="30" font-weight="700" fill="#1a1a2e" letter-spacing="-0.5">Xer</text>
+        font-size="30" font-weight="700" fill="currentColor" letter-spacing="-0.5">Xer</text>
 
-  <!-- The "O" as a neural-network circle, centered on cap-height midpoint -->
-  <!-- Circle outline -->
+  <!-- The "O" as a neural-network circle -->
   <circle cx="131" cy="27" r="15" fill="none" stroke="url(#grad)" stroke-width="2.5"/>
-
-  <!-- Center node -->
   <circle cx="131" cy="27" r="2.5" fill="url(#grad)"/>
-
-  <!-- Outer nodes (scaled to r=15 circle) -->
   <circle cx="131" cy="20" r="1.5" fill="#6c63ff" opacity="0.85"/>
   <circle cx="137" cy="24" r="1.5" fill="#4a90d9" opacity="0.85"/>
   <circle cx="137" cy="30" r="1.5" fill="#00d4aa" opacity="0.85"/>
   <circle cx="131" cy="34" r="1.5" fill="#00d4aa" opacity="0.75"/>
   <circle cx="125" cy="30" r="1.5" fill="#6c63ff" opacity="0.75"/>
   <circle cx="125" cy="24" r="1.5" fill="#6c63ff" opacity="0.75"/>
-
-  <!-- Connecting lines from center -->
   <line x1="131" y1="27" x2="131" y2="21" stroke="url(#grad)" stroke-width="1" opacity="0.5"/>
   <line x1="131" y1="27" x2="136" y2="25" stroke="url(#grad)" stroke-width="1" opacity="0.5"/>
   <line x1="131" y1="27" x2="136" y2="29" stroke="url(#grad)" stroke-width="1" opacity="0.5"/>
@@ -34,15 +27,15 @@
   <line x1="131" y1="27" x2="126" y2="29" stroke="url(#grad)" stroke-width="1" opacity="0.5"/>
   <line x1="131" y1="27" x2="126" y2="25" stroke="url(#grad)" stroke-width="1" opacity="0.5"/>
 
-  <!-- "ToAI" — baseline y=38, "To" light, "AI" bold gradient -->
+  <!-- "ToAI" — "To" inherits theme color at 55% opacity, "AI" gradient -->
   <text x="149" y="38"
         font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
         font-size="30">
-    <tspan font-weight="400" fill="#555">To</tspan><tspan font-weight="800" fill="url(#grad)">AI</tspan>
+    <tspan font-weight="400" fill="currentColor" opacity="0.55">To</tspan><tspan font-weight="800" fill="url(#grad)" opacity="1">AI</tspan>
   </text>
 
-  <!-- Tagline — centered across full wordmark -->
-  <text x="150" y="54" text-anchor="middle"
+  <!-- Tagline — centered under wordmark (midpoint of x=52..~205 = ~128) -->
+  <text x="128" y="54" text-anchor="middle"
         font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
-        font-size="9" font-weight="400" fill="#888" letter-spacing="1.4">AI TOOLS FOR SMALL BUSINESS</text>
+        font-size="9" font-weight="400" fill="currentColor" opacity="0.45" letter-spacing="1.4">AI TOOLS FOR SMALL BUSINESS</text>
 </svg>
