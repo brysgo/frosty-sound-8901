@@ -1,46 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" width="280" height="64" role="img" aria-label="XeroToAI">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60" width="300" height="60" role="img" aria-label="XeroToAI">
   <defs>
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#6c63ff;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#00d4aa;stop-opacity:1" />
     </linearGradient>
-    <linearGradient id="textgrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
-    </linearGradient>
   </defs>
 
-  <!-- Icon: stylized 0→ (zero to) with neural dot -->
-  <!-- Outer circle (the "zero") -->
-  <circle cx="32" cy="32" r="26" fill="none" stroke="url(#grad)" stroke-width="3.5"/>
+  <!-- "Xer" — bold dark, baseline y=38 -->
+  <text x="52" y="38"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="30" font-weight="700" fill="#1a1a2e" letter-spacing="-0.5">Xer</text>
 
-  <!-- Inner spark / AI node cluster -->
-  <circle cx="32" cy="32" r="4" fill="url(#grad)"/>
-  <circle cx="32" cy="20" r="2.5" fill="#6c63ff" opacity="0.8"/>
-  <circle cx="43" cy="27" r="2.5" fill="#4a90d9" opacity="0.8"/>
-  <circle cx="43" cy="37" r="2.5" fill="#00d4aa" opacity="0.8"/>
-  <circle cx="32" cy="44" r="2.5" fill="#00d4aa" opacity="0.7"/>
-  <circle cx="21" cy="37" r="2.5" fill="#6c63ff" opacity="0.7"/>
-  <circle cx="21" cy="27" r="2.5" fill="#6c63ff" opacity="0.7"/>
+  <!-- The "O" as a neural-network circle, centered on cap-height midpoint -->
+  <!-- Circle outline -->
+  <circle cx="131" cy="27" r="15" fill="none" stroke="url(#grad)" stroke-width="2.5"/>
 
-  <!-- Connecting lines from center node -->
-  <line x1="32" y1="32" x2="32" y2="22" stroke="url(#grad)" stroke-width="1.2" opacity="0.5"/>
-  <line x1="32" y1="32" x2="41" y2="28" stroke="url(#grad)" stroke-width="1.2" opacity="0.5"/>
-  <line x1="32" y1="32" x2="41" y2="36" stroke="url(#grad)" stroke-width="1.2" opacity="0.5"/>
-  <line x1="32" y1="32" x2="32" y2="42" stroke="url(#grad)" stroke-width="1.2" opacity="0.5"/>
-  <line x1="32" y1="32" x2="23" y2="36" stroke="url(#grad)" stroke-width="1.2" opacity="0.5"/>
-  <line x1="32" y1="32" x2="23" y2="28" stroke="url(#grad)" stroke-width="1.2" opacity="0.5"/>
+  <!-- Center node -->
+  <circle cx="131" cy="27" r="2.5" fill="url(#grad)"/>
 
-  <!-- Arrow pointing right (the "to") -->
-  <line x1="60" y1="32" x2="74" y2="32" stroke="url(#grad)" stroke-width="2.5" stroke-linecap="round"/>
-  <polyline points="68,26 74,32 68,38" fill="none" stroke="url(#grad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Outer nodes (scaled to r=15 circle) -->
+  <circle cx="131" cy="20" r="1.5" fill="#6c63ff" opacity="0.85"/>
+  <circle cx="137" cy="24" r="1.5" fill="#4a90d9" opacity="0.85"/>
+  <circle cx="137" cy="30" r="1.5" fill="#00d4aa" opacity="0.85"/>
+  <circle cx="131" cy="34" r="1.5" fill="#00d4aa" opacity="0.75"/>
+  <circle cx="125" cy="30" r="1.5" fill="#6c63ff" opacity="0.75"/>
+  <circle cx="125" cy="24" r="1.5" fill="#6c63ff" opacity="0.75"/>
 
-  <!-- Wordmark -->
-  <text x="84" y="23" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#1a1a2e" letter-spacing="-0.5">Xero</text>
-  <text x="84" y="23" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="transparent">Xero</text>
-  <!-- "To" in lighter weight -->
-  <text x="84" y="23" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="700" fill="#1a1a2e">Xero<tspan font-weight="400" fill="#555">To</tspan><tspan font-weight="800" fill="url(#grad)">AI</tspan></text>
+  <!-- Connecting lines from center -->
+  <line x1="131" y1="27" x2="131" y2="21" stroke="url(#grad)" stroke-width="1" opacity="0.5"/>
+  <line x1="131" y1="27" x2="136" y2="25" stroke="url(#grad)" stroke-width="1" opacity="0.5"/>
+  <line x1="131" y1="27" x2="136" y2="29" stroke="url(#grad)" stroke-width="1" opacity="0.5"/>
+  <line x1="131" y1="27" x2="131" y2="33" stroke="url(#grad)" stroke-width="1" opacity="0.5"/>
+  <line x1="131" y1="27" x2="126" y2="29" stroke="url(#grad)" stroke-width="1" opacity="0.5"/>
+  <line x1="131" y1="27" x2="126" y2="25" stroke="url(#grad)" stroke-width="1" opacity="0.5"/>
 
-  <!-- Tagline -->
-  <text x="84" y="42" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="400" fill="#888" letter-spacing="1.5">AI TOOLS FOR SMALL BUSINESS</text>
+  <!-- "ToAI" — baseline y=38, "To" light, "AI" bold gradient -->
+  <text x="149" y="38"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="30">
+    <tspan font-weight="400" fill="#555">To</tspan><tspan font-weight="800" fill="url(#grad)">AI</tspan>
+  </text>
+
+  <!-- Tagline — centered across full wordmark -->
+  <text x="150" y="54" text-anchor="middle"
+        font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="9" font-weight="400" fill="#888" letter-spacing="1.4">AI TOOLS FOR SMALL BUSINESS</text>
 </svg>
